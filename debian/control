@@ -1,0 +1,14 @@
+Source: cvm-ui-desktop-distrologo
+Section: utils
+Priority: optional
+Maintainer: jiafeitech
+Build-Depends: debhelper (>= 11),
+Homepage: https://github.com/jiafeitech/cvm-ui-desktop-distrologo
+Vcs-Browser: hhttps://github.com/jiafeitech/cvm-ui-desktop-distrologo
+Vcs-Git: https://github.com/jiafeitech/cvm-ui-desktop-distrologo.git
+Rules-Requires-Root: no
+
+Package: cvm-ui-desktop-distrologo
+Architecture: all
+Depends: ${misc:Depends}
+Description: Official Cvm UI Desktop Logo

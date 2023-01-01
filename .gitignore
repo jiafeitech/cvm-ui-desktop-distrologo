@@ -1,0 +1,7 @@
+.vscode/
+mesonbuild/
+build/
+debian/files
+debian/cvm-ui-desktop-distrologo.substvars
+debian/cvm-ui-desktop-distrologo
+debian/.debhelper
