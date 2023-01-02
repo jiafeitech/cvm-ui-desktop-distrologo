@@ -32,6 +32,20 @@ if [ "$1" = "upgrade" ] || [ "$1" = "install" ]; then
 		"/usr/share/pixmaps/ubuntu-logo-text.png"
 	ln -s /usr/share/pixmaps/cvm-ui-desktop-logo-text-dark.png \
 		"/usr/share/pixmaps/ubuntu-logo-text-dark.png"
+
+	# remove plymouth diverts
+	unlink /usr/share/plymouth/ubuntu-logo.png
+	dpkg-divert --package cvm-ui-desktop-distrologo --remove --rename \
+		--divert "/usr/share/plymouth/ubuntu-logo.png"".cvm-ui-desktop" \
+		/usr/share/plymouth/ubuntu-logo.png
+
+	# add plymouth diverts
+	dpkg-divert --package cvm-ui-desktop-distrologo --add --rename \
+		--divert "/usr/share/plymouth/ubuntu-logo.png.cvm-ui-desktop" \
+			"/usr/share/plymouth/ubuntu-logo.png"
+
+	ln -s /usr/share/pixmaps/cvm-ui-desktop-logo-text-dark.png \
+		"/usr/share/plymouth/ubuntu-logo.png"
 fi
 
 #DEBHELPER#
