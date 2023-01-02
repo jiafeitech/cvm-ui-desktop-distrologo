@@ -1,11 +1,5 @@
-cvm-ui-desktop-distrologo (0.02) jammy; urgency=low
+cvm-ui-desktop-distrologo (5.2) jammy; urgency=low
 
-  * some updates
+  * Cvm UI Desktop 5.2 Logo
 
- -- Podter  Mon, 02 Jan 2023 10:37:00 +0100
-
-cvm-ui-desktop-distrologo (0.0.1) jammy; urgency=low
-
-  * First release
-
- -- Podter  Mon, 02 Jan 2023 00:40:00 +0100
+ -- Podter  Mon, 02 Jan 2023 11:56:00 +0100
